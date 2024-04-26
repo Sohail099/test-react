@@ -1,0 +1,38 @@
+{
+  "name": "test-react",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "main": "src/index.js",
+  "dependencies": {
+    "class-variance-authority": "0.7.0",
+    "clsx": "2.0.0",
+    "loader-utils": "3.2.1",
+    "postcss": "8.4.31",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "4.11.0",
+    "react-scripts": "5.0.1",
+    "tailwind-merge": "2.0.0",
+    "tailwindcss": "3.3.5",
+    "tailwindcss-animated": "1.0.1"
+  },
+  "devDependencies": {
+    "@babel/runtime": "7.13.8",
+    "typescript": "4.1.3"
+  },
+  "scripts": {
+    "build:tailwind": "tailwindcss build src/index.css -o src/tailwind.output.css",
+    "prestart": "npm run build:tailwind",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
